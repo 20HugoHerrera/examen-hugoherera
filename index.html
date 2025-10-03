@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sabores de El Salvador</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">🇸🇻 Sabores de El Salvador</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#platillos">Platillos Típicos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECCIÓN INICIO -->
+  <section id="inicio" class="section text-center text-white d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1>Bienvenido a Sabores de El Salvador</h1>
+      <p class="lead">Descubre lo mejor de nuestra gastronomía tradicional</p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN PLATILLOS -->
+  <section id="platillos" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Platillos Típicos</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <img src="img/Pupusas.jpg" class="img-fluid rounded" alt="Pupusas">
+          <h4 class="mt-2">Pupusas</h4>
+          <p>El platillo más representativo de El Salvador, relleno de queso, frijoles, chicharrón y más.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="img/yuca.jpg" class="img-fluid rounded" alt="Yuca con chicharrón">
+          <h4 class="mt-2">Yuca con chicharrón</h4>
+          <p>Servida hervida o frita, acompañada con curtido y chicharrón.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="img/tamales.jpg" class="img-fluid rounded" alt="Tamales">
+          <h4 class="mt-2">Tamales</h4>
+          <p>De elote, pollo o pisques, son parte esencial de la cocina tradicional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN HISTORIA -->
+  <section id="historia" class="section text-white bg-dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestra Historia</h2>
+      <p>La gastronomía salvadoreña es una mezcla rica de tradiciones indígenas y españolas. Desde las pupusas hasta los tamales, nuestros platillos reflejan la diversidad cultural del país. Las recetas se han pasado de generación en generación, conservando sabores únicos y técnicas ancestrales.</p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN GALERÍA -->
+  <section id="galeria" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Galería</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="img/almuerzo.jpg" class="img-fluid rounded" alt="Comida 1">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="img/empanadas.jpg" class="img-fluid rounded" alt="Empanadas">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="img/sopadepata.jpg" class="img-fluid rounded" alt="Sopa de pata">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTACTO -->
+  <section id="contacto" class="section text-white bg-primary">
+    <div class="container">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" required />
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo:</label>
+          <input type="email" class="form-control" id="correo" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje:</label>
+          <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-light">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white py-3 bg-dark">
+    <p>&copy; 2025 Sabores de El Salvador. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

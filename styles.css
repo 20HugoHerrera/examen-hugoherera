@@ -1,0 +1,48 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+#inicio {
+  background: linear-gradient(to right, #0d6efd, #003087); /* Colores bandera */
+  height: 100vh;
+  
+}
+
+#inicio h1 {
+  font-size: 3rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.custom-navbar {
+  background-color: #0d6efd; /* Azul bandera ES */
+}
+
+.bg-primary {
+  background-color: #0d6efd !important;
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: #003087;
+}
+
+.btn-light:hover {
+  background-color: #e2e6ea;
+}
+
+h2 {
+  font-weight: 700;
+  color: #003087;
+}
+
+p {
+  font-size: 1.1rem;
+}
