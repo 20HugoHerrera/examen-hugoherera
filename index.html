@@ -5,26 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sabores de El Salvador</title>
 
-  <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- CSS Personalizado -->
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    #inicio {
+      background-image: url('img/fondo.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 100vh;
+    }
+    .card-custom {
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .section {
+      padding: 60px 0;
+    }
+  </style>
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top custom-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">🇸🇻 Sabores de El Salvador</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#platillos">Platillos Típicos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#platillos">Platillos</a></li>
           <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
           <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
@@ -33,66 +45,74 @@
     </div>
   </nav>
 
-  <!-- SECCIÓN INICIO -->
-  <section id="inicio" class="section text-center text-white d-flex align-items-center justify-content-center">
+  <!-- INICIO -->
+  <section id="inicio" class="d-flex align-items-center justify-content-center text-center">
     <div class="container">
-      <h1>Bienvenido a Sabores de El Salvador</h1>
-      <p class="lead">Descubre lo mejor de nuestra gastronomía tradicional</p>
+      <h1 class="display-4 fw-bold">Sabores de El Salvador</h1>
+      <p class="lead">Explora lo mejor de nuestra cocina tradicional</p>
     </div>
   </section>
 
-  <!-- SECCIÓN PLATILLOS -->
+  <!-- PLATILLOS -->
   <section id="platillos" class="section bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Platillos Típicos</h2>
-      <div class="row text-center">
+      <h2 class="text-center mb-5">Platillos Típicos</h2>
+      <div class="row">
         <div class="col-md-4 mb-4">
-          <img src="img/Pupusas.jpg" class="img-fluid rounded" alt="Pupusas">
-          <h4 class="mt-2">Pupusas</h4>
-          <p>El platillo más representativo de El Salvador, relleno de queso, frijoles, chicharrón y más.</p>
+          <div class="p-3 bg-white card-custom">
+            <img src="img/Pupusas.jpg" class="img-fluid rounded mb-2" alt="Pupusas">
+            <h4>Pupusas</h4>
+            <p>Rellenas de queso, frijoles, chicharrón y más.</p>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-          <img src="img/yuca.jpg" class="img-fluid rounded" alt="Yuca con chicharrón">
-          <h4 class="mt-2">Yuca con chicharrón</h4>
-          <p>Servida hervida o frita, acompañada con curtido y chicharrón.</p>
+          <div class="p-3 bg-white card-custom">
+            <img src="img/yuca.jpg" class="img-fluid rounded mb-2" alt="Yuca">
+            <h4>Yuca con chicharrón</h4>
+            <p>Servida hervida o frita, acompañada con curtido.</p>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-          <img src="img/tamales.jpg" class="img-fluid rounded" alt="Tamales">
-          <h4 class="mt-2">Tamales</h4>
-          <p>De elote, pollo o pisques, son parte esencial de la cocina tradicional.</p>
+          <div class="p-3 bg-white card-custom">
+            <img src="img/tamales.jpg" class="img-fluid rounded mb-2" alt="Tamales">
+            <h4>Tamales</h4>
+            <p>De elote, pollo o pisques.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN HISTORIA -->
-  <section id="historia" class="section text-white bg-dark">
+  <!-- HISTORIA -->
+  <section id="historia" class="section bg-dark text-white">
     <div class="container">
       <h2 class="text-center mb-4">Nuestra Historia</h2>
-      <p>La gastronomía salvadoreña es una mezcla rica de tradiciones indígenas y españolas. Desde las pupusas hasta los tamales, nuestros platillos reflejan la diversidad cultural del país. Las recetas se han pasado de generación en generación, conservando sabores únicos y técnicas ancestrales.</p>
+      <p>La gastronomía salvadoreña es una mezcla rica de tradiciones indígenas y españolas...</p>
     </div>
   </section>
 
-  <!-- SECCIÓN GALERÍA -->
+  <!-- GALERÍA como CARRUSEL -->
   <section id="galeria" class="section bg-light">
     <div class="container">
       <h2 class="text-center mb-4">Galería</h2>
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <img src="img/almuerzo.jpg" class="img-fluid rounded" alt="Comida 1">
+      <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="img/almuerzo.jpg" class="d-block w-100" alt="Almuerzo"></div>
+          <div class="carousel-item"><img src="img/empanadas.jpg" class="d-block w-100" alt="Empanadas"></div>
+          <div class="carousel-item"><img src="img/sopadepata.jpg" class="d-block w-100" alt="Sopa de pata"></div>
         </div>
-        <div class="col-md-4 mb-3">
-          <img src="img/empanadas.jpg" class="img-fluid rounded" alt="Empanadas">
-        </div>
-        <div class="col-md-4 mb-3">
-          <img src="img/sopadepata.jpg" class="img-fluid rounded" alt="Sopa de pata">
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN CONTACTO -->
-  <section id="contacto" class="section text-white bg-primary">
+  <!-- CONTACTO -->
+  <section id="contacto" class="section bg-primary text-white">
     <div class="container">
       <h2 class="text-center mb-4">Contáctanos</h2>
       <form>
@@ -113,12 +133,10 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="text-center text-white py-3 bg-dark">
-    <p>&copy; 2025 Sabores de El Salvador. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Sabores de El Salvador</p>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
